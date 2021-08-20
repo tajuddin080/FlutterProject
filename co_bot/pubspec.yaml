@@ -62,4 +62,11 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
     #create your assets file and add you json files
-    
+    -" assets/home.gif"
+    -" assets/home1.png"
+    -" assets/home2.jpg"
+    -" assets/home3.jpg"
+    -" assets/home5.jpg"
+    -" assets/home6.png"
+    -" assets/home7.jpg"
+    -" assets/home8.png"

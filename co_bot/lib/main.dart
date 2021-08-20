@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget
         splash:Container
         ( 
           child:
-          Image.network('https://i.pinimg.com/originals/a8/d8/66/a8d866c87e75ae65af8a3f167ee1e8f6.gif',fit: BoxFit.cover,),
+          Image.asset('assets/home.gif',fit: BoxFit.cover,),
           height:double.maxFinite,
         ),
         nextScreen: Main(),

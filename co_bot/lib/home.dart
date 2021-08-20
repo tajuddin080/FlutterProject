@@ -21,12 +21,12 @@ class HomeScreen extends StatelessWidget
 
   final List<String> imagesList=
   [
-    'https://www.who.int/images/default-source/health-topics/coronavirus/myth-busters/mythbuster-bacteria-vs-virus.png',
-    'https://cdn.who.int/media/images/default-source/vaccines-explained/vaccines-explained_topic-9_getting-vaccinated_mask_hd.jpg?sfvrsn=78d2abdc_25',
-    'https://peacekeeping.un.org/sites/default/files/un75_sg_quote_twitter.jpg',
-    'https://assets.thehansindia.com/h-upload/2021/01/10/1024039-frontline-warriors.webp',
-    'https://pbs.twimg.com/media/E2ork4KUcAM2nOn.jpg',
-    'https://i1.rgstatic.net/ii/institution.image/AS%3A267468965122053%401440780978376_l',
+    
+     "assets/home1.png",
+     "assets/home2.jpg",
+     "assets/home3.jpg",
+     "assets/home5.jpg",
+     "assets/home6.png",
   ];
   
   Widget build(BuildContext context) 
@@ -54,7 +54,7 @@ class HomeScreen extends StatelessWidget
                 fit:StackFit.expand,
                 children:<Widget>
                 [
-                  Image.network(e,
+                  Image.asset(e,
                   width:width,
                   height:height*0.36,
                   fit:BoxFit.fill
@@ -96,7 +96,7 @@ class HomeScreen extends StatelessWidget
                         [
                           Ink.image
                           ( 
-                            image: NetworkImage('https://wwwassets.rand.org/content/rand/blog/2020/08/its-going-to-be-the-vaccination-stupid/jcr:content/par/teaser.aspectfit.0x1200.jpg/1598296544648.jpg'),
+                            image: AssetImage('assets/home7.jpg'),
                             colorFilter: ColorFilters.greyscale,
                             child:InkWell
                             (
@@ -205,7 +205,7 @@ class HomeScreen extends StatelessWidget
                         [
                           Ink.image
                           (
-                            image: NetworkImage('https://don16obqbay2c.cloudfront.net/wp-content/uploads/FAQ-1496222256.png'),
+                            image: AssetImage('assets/home8.png'),
                             child:InkWell
                             (
                             onTap:(){Navigator.push(context,FAQroute());},
